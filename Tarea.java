@@ -7,13 +7,25 @@ public class Tarea
     
     private boolean tareaCompletada;
     
-    public Tarea(String descripcionDeTarea)
+    public Tarea(String nuevaDescripcion)
     {
-        descripcion = descripcionDeTarea;
+        descripcion = nuevaDescripcion;
         tareaCompletada = false;
     }
     
+    public String getDescripcion()
+    {
+        return descripcion;
+    }
     
+    public boolean getTareaCompletada()
+    {
+        boolean estaCompletada = false;
+        if (tareaCompletada == true) {
+            estaCompletada = true;
+        }
+        return tareaCompletada;
+    }
 
     
 }

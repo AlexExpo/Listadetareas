@@ -1,4 +1,8 @@
 #BlueJ class context
-comment0.params=descripcionDeTarea
+comment0.params=nuevaDescripcion
 comment0.target=Tarea(java.lang.String)
-numComments=1
+comment1.params=
+comment1.target=java.lang.String\ getDescripcion()
+comment2.params=
+comment2.target=boolean\ getTareaCompletada()
+numComments=3
