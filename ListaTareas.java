@@ -43,8 +43,7 @@ public class ListaTareas
     {
         int tareaCompletada = numeroTarea - 1;
         if (numeroTarea <= listaDeTareas.size() && numeroTarea > 0) {
-            Tarea tareas = listaDeTareas.get(tareaCompletada);
-            tareas.set(tareaCompletada, true);
+            listaDeTareas.get(tareaCompletada).marcarTarea();
         }
     }
 }

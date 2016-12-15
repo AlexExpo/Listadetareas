@@ -5,4 +5,6 @@ comment1.params=
 comment1.target=java.lang.String\ getDescripcion()
 comment2.params=
 comment2.target=boolean\ getTareaCompletada()
-numComments=3
+comment3.params=
+comment3.target=void\ marcarTarea()
+numComments=4

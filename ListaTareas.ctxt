@@ -7,4 +7,6 @@ comment1.text=\r\n\ Creo\ un\ m\u00E9todo\ para\ agregar\ una\ tarea.\r\n
 comment2.params=
 comment2.target=void\ verTareas()
 comment2.text=\r\n\ Creo\ un\ metodo\ para\ ver\ todas\ las\ tareas\ de\ la\ lista\ de\ tareas\ \r\n\ numeradas\ y\ pudiendo\ ver\ si\ estan\ completadas\ o\ no.\r\n
-numComments=3
+comment3.params=numeroTarea
+comment3.target=void\ marcarComoCompletada(int)
+numComments=4

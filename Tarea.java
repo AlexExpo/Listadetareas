@@ -26,6 +26,11 @@ public class Tarea
         }
         return tareaCompletada;
     }
+    
+    public void marcarTarea()
+    {
+        tareaCompletada = true;
+    }
 
     
 }
