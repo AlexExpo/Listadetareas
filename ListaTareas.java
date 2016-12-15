@@ -39,11 +39,30 @@ public class ListaTareas
         }
     }
     
+    /**
+     * Creo un metodo para marcar una tarea como completada.
+     */
     public void marcarComoCompletada(int numeroTarea)
     {
         int tareaCompletada = numeroTarea - 1;
         if (numeroTarea <= listaDeTareas.size() && numeroTarea > 0) {
             listaDeTareas.get(tareaCompletada).marcarTarea();
+        }
+    }
+    
+    public void buscarCoincidencias(String textoParaBuscar)
+    {
+        int contador = 1;
+        String textoCoincidente = "";
+        for (Tarea tareas : listaDeTareas) {
+            if (tareas.getDescripcion().contains(textoParaBuscar)) {
+                textoCoincidente = contador + ". " + tareas.getDescripcion();
+                if (tareas.getTareaCompletada()) {
+                    textoCoincidente = textoCoincidente + " TERMINADA. " ;
+                }
+                System.out.println(textoCoincidente);
+            }
+            contador++;
         }
     }
 }
