@@ -34,11 +34,17 @@ public class ListaTareas
             if (tareas.getTareaCompletada() == true) {
                 textoAMostrar = textoAMostrar + "TERMINADA. ";
             }
-            
             System.out.println(textoAMostrar);
             contador++;
-            
-            
+        }
+    }
+    
+    public void marcarComoCompletada(int numeroTarea)
+    {
+        int tareaCompletada = numeroTarea - 1;
+        if (numeroTarea <= listaDeTareas.size() && numeroTarea > 0) {
+            Tarea tareas = listaDeTareas.get(tareaCompletada);
+            tareas.set(tareaCompletada, true);
         }
     }
 }
