@@ -50,6 +50,9 @@ public class ListaTareas
         }
     }
     
+    /**
+     * Creo un metodo para buscar tareas introduciendo un texto coincidente.
+     */
     public void buscarCoincidencias(String textoParaBuscar)
     {
         int contador = 1;
@@ -58,11 +61,22 @@ public class ListaTareas
             if (tareas.getDescripcion().contains(textoParaBuscar)) {
                 textoCoincidente = contador + ". " + tareas.getDescripcion();
                 if (tareas.getTareaCompletada()) {
-                    textoCoincidente = textoCoincidente + " TERMINADA. " ;
+                    textoCoincidente = textoCoincidente + ". TERMINADA. " ;
                 }
                 System.out.println(textoCoincidente);
             }
             contador++;
+        }
+    }
+    
+    /**
+     * Creo un metodo para eliminar una tarea.
+     */
+    public void eliminarTarea(int numeroTarea)
+    {
+        numeroTarea = numeroTarea - 1;
+        if (numeroTarea < listaDeTareas.size() && numeroTarea >= 0) {
+            listaDeTareas.remove(numeroTarea);
         }
     }
 }
